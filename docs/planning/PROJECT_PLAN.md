@@ -45,9 +45,7 @@
 ### Essential Plugins (Recommended)
 - **Advanced Custom Fields Pro** - Custom fields and post types
 - **Custom Post Type UI** - Additional CPT management (if needed beyond ACF)
-- **Yoast SEO** - Search engine optimization
-- **WP Rocket** - Performance optimization (when budget allows)
-- **UpdraftPlus** - Backup solution
+- **RankMath SEO** - Search engine optimization
 
 ## Development Approach
 
@@ -97,7 +95,7 @@
 
 2. **Performance & SEO**
    - Image optimization
-   - Caching strategy
+   - Cloudflare CDN and performance optimization
    - Schema markup
    - Performance monitoring
 
