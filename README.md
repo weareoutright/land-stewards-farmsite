@@ -18,9 +18,9 @@ This site serves as an informational resource for land stewards, farmers, and ag
 ### Local Development Setup
 
 1. **Prerequisites**: Install [Lando](https://lando.dev/) for local development
-2. **Clone Repository**: `git clone [repository-url]`
+2. **Clone Repository**: `git clone ssh://codeserver.dev.b077f231-a371-479d-bbeb-0ce598a02095@codeserver.dev.b077f231-a371-479d-bbeb-0ce598a02095.drush.in:2222/~/repository.git`
 3. **Start Environment**: `lando start`
-4. **Pull Database**: `lando pull pantheon`
+4. **Pull Database**: `lando pull`
 
 See `/docs/setup/` for detailed environment configuration.
 
