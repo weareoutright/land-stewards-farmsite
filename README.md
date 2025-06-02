@@ -1,39 +1,68 @@
-# WordPress
+# Land Steward Farming Best Practices
 
-This is a WordPress repository configured to run on the [Pantheon platform](https://pantheon.io).
+A WordPress website focused on land steward farming best practices, built for scalability and future WooCommerce integration.
 
-Pantheon is website platform optimized and configured to run high performance sites with an amazing developer workflow. There is built-in support for features such as Varnish, Redis, Apache Solr, New Relic, Nginx, PHP-FPM, MySQL, PhantomJS and more. 
+## Project Overview
+
+This site serves as an informational resource for land stewards, farmers, and agricultural professionals seeking evidence-based farming practices. The architecture is designed to support future e-commerce functionality while maintaining optimal performance and user experience.
+
+## Technical Stack
+
+- **WordPress** - Latest version with custom theme development
+- **Advanced Custom Fields Pro** - Custom post types and field management
+- **Pantheon Hosting** - Dev/Test/Live workflow with Cloudflare CDN
+- **Lando** - Local development environment
 
 ## Getting Started
 
-### 1. Spin-up a site
+### Local Development Setup
 
-If you do not yet have a Pantheon account, you can create one for free. Once you've verified your email address, you will be able to add sites from your dashboard. Choose "WordPress" to use this distribution.
+1. **Prerequisites**: Install [Lando](https://lando.dev/) for local development
+2. **Clone Repository**: `git clone [repository-url]`
+3. **Start Environment**: `lando start`
+4. **Pull Database**: `lando pull pantheon`
 
-### 2. Load up the site
+See `/docs/setup/` for detailed environment configuration.
 
-When the spin-up process is complete, you will be redirected to the site's dashboard. Click on the link under the site's name to access the Dev environment.
+### Development Workflow
 
-![alt](http://i.imgur.com/2wjCj9j.png?1, '')
+- **Dev Environment**: Local development with Lando
+- **Test Environment**: Pantheon test site for staging
+- **Live Environment**: Production site on Pantheon
 
-### 3. Run the WordPress installer
+## Project Documentation
 
-How about the WordPress database config screen? No need to worry about database connection information as that is taken care of in the background. The only step that you need to complete is the site information and the installation process will be complete.
+Comprehensive project documentation is organized in the `/docs/` directory:
 
-We will post more information about how this works but we recommend developers take a look at `wp-config.php` to get an understanding.
+- **`/docs/planning/`** - Project planning documents and requirements
+  - `PROJECT_PLAN.md` - Complete project roadmap and technical approach
+- **`/docs/setup/`** - Environment and technical setup documentation
+- **`/docs/development/`** - Development guidelines and specifications
+- **`/docs/content/`** - Content strategy and structure documentation
 
-![alt](http://i.imgur.com/4EOcqYN.png, '')
+## Architecture
 
-If you would like to keep a separate set of configuration for local development, you can use a file called `wp-config-local.php`, which is already in our .gitignore file.
+### Theme Strategy
+Custom child theme approach using modern WordPress standards for maximum flexibility and future WooCommerce compatibility.
 
-### 4. Enjoy!
+### Content Management
+- Custom post types for articles, guides, case studies, and resources
+- Advanced Custom Fields for structured content input
+- Custom taxonomies for content organization (regions, crops, practices)
 
-![alt](http://i.imgur.com/fzIeQBP.png, '')
+### Performance
+- Cloudflare CDN integration
+- Image optimization
+- Pantheon's high-performance hosting stack
 
-## Branches
+## Contributing
 
-The `default` branch of this repository is where PRs are merged, and has [CI](https://github.com/pantheon-systems/WordPress/tree/default/.circleci) that copies `default` to `master` after removing the CI directories. This allows customers to clone from `master` and implement their own CI without needing to worry about potential merge conflicts.
+This project follows standard WordPress development practices with custom theme development. See `/docs/development/` for coding standards and contribution guidelines.
 
-## Custom Upstreams
+## License
 
-If you are using this repository as a starting point for a custom upstream, be sure to review the [documentation](https://pantheon.io/docs/create-custom-upstream#pull-in-core-from-pantheons-upstream) and pull the core files from the `master` branch.
+[License information - to be determined]
+
+## Support
+
+For technical questions or project planning, refer to the documentation in `/docs/planning/PROJECT_PLAN.md`.

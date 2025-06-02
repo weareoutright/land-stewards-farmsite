@@ -55,3 +55,8 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+/.idea/.gitignore
+/.idea/farmsite.iml
+/.idea/git_toolbox_prj.xml
+/.idea/modules.xml
+/.idea/vcs.xml
