@@ -1,306 +1,272 @@
-# Land Steward Farming Best Practices Site - Project Plan
+# Land Steward Farming Site - Project Plan
 
 ## Project Overview
 
-**Goal**: Create a WordPress website focused on marketing livestock breeding practices and later crops, with future WooCommerce integration planned.
+**Goal**: Create a WordPress website focused on marketing livestock breeding practices with future expansion to crop content and e-commerce capabilities.
 
-**Relationship to Main Land Stewards Site**: This site will be more marketing-focused for livestock breeding practices and crops, different from the main Land Stewards site. **Design should complement the main LS website using same styling but won't go into as much detail.**
+**Relationship to Main Land Stewards Site**: This will be a separate marketing-focused site for livestock breeding and land management services. Design should complement the main LS website using similar styling but with less detail and complexity.
 
-**Technical Approach**: Custom theme development using Advanced Custom Fields (ACF) for content management, avoiding page builder plugins.
+**Technical Approach**: Custom WordPress theme development using Advanced Custom Fields (ACF) for content management, avoiding page builder plugins.
 
-**MAJOR ARCHITECTURE CONSIDERATION**: Recently completed NextJS front-end only website may be included in this build. WordPress Multisite architecture should be evaluated for managing multiple sites under one installation. 
-
-## Initial Requirements Gathering
-
-### Target Audience & Goals
-**Primary Audiences:**
+## Target Audiences & User Goals
 
 1. **Other Breeders/Stewards**
-   - Goal: Share genetics information, parasite resistance data, genome information
-   - Goal: Promote best practices
-   - Goal: Sell breeding stock (relationship building, offline sales)
+   - Share genetics information, parasite resistance data, genome information
+   - Promote best practices in livestock breeding
+   - Facilitate breeding stock sales (relationship building, offline transactions)
 
 2. **Large Landowners/Land Managers**
-   - Goal: Lease goats for invasive species management
-   - Goal: Lease sheep for alternative mowing solutions (solar farms, etc.)
-   - Goal: Education on land management through livestock
+   - Lease goats for invasive species management
+   - Lease sheep for alternative mowing solutions (solar farms, large properties)
+   - Access education on land management through livestock
 
 3. **Pet Owners**
-   - Goal: Goat inquiries (not direct sales, inquiry-based only)
+   - Submit inquiries for goat purchases (inquiry-only, not direct sales)
 
-### Content Strategy & Functional Requirements
+## Content Strategy
 
-**Primary Content Areas Identified**:
+### Primary Content Areas
 - **Green Program** - Sustainable practices and environmental initiatives
-- **Livestock** - Sheep and goats breeding, genetics, parasite resistance
-- **Grazing Practices** - Land management through livestock
-- **Breeding** - Genetics information, genome data, breeding stock
-- **Education** - Resources for land managers on invasive species control and alternative mowing
-- **Produce** - Future expansion to crop/produce content
-- **Regional Focus** - Showcase Northeast region expertise (limited competition in area)
+- **Livestock Management** - Sheep and goats breeding, genetics, parasite resistance
+- **Grazing Practices** - Land management techniques and case studies
+- **Breeding Information** - Genetics data, genome information, breeding stock profiles
+- **Educational Resources** - Guides for land managers on invasive species control and alternative mowing
+- **Regional Showcase** - Northeast region expertise and success stories (competitive advantage)
+- **Future Expansion** - Crop/produce content planned for later phases
 
-**Required Functionality**:
-- **CMS** - Content management system for regular updates
+### Required Functionality
+- **Content Management System** - Easy updates for non-technical users
 - **Submission Forms** - Various request forms for different inquiries and services
-- **Inquiry System** - For pet goat inquiries (not direct sales)
+- **Inquiry System** - Pet goat purchase inquiries and land management consultations
+- **Search & Filtering** - Advanced filtering by genetics, region, practice type, animal type
 
-**E-commerce Planning**:
-- [ ] **Sector Development**: Build comprehensive list of possible e-commerce sectors
-- [ ] **Integration Planning**: Connect content areas to future sales channels
+### Content Organization
+- **Custom Post Types**: Livestock Profiles, Green Program Posts, Grazing Case Studies, Educational Resources, Regional Showcases, Breeding Stock Listings, Service Inquiries
+- **Taxonomies**: Animal type, practice type, region, difficulty level, genetics data
+- **Custom Fields**: Breeding information, genetics data, parasite resistance metrics, contact forms
 
-**Content Organization**:
-- [ ] **Taxonomy Structure**: By animal type, practice type, region, difficulty
-- [ ] **User Interaction**: Define accounts/login needs for different user types
-- [ ] **Search/Filtering**: Advanced filtering by genetics, region, practice type
+## Future Integration Planning
 
-### Future E-commerce & CRM Integration
-**E-commerce Timeline**: Not initially needed, but will be added eventually
+### E-commerce Development (Phase 2+)
+**Timeline**: Not needed for initial launch, planned for future implementation
 
-**CRM Integration Planning**:
-- **Primary Options**: Salesforce vs. Raisers Edge (most likely Salesforce)
-- **Goal**: Consolidate multiple databases/spreadsheets under one roof
-- Website architecture must accommodate future CRM connectivity
-- Consider API integration points for lead capture and customer data sync
-- Future e-commerce must integrate with chosen CRM system
+**Planned Features**:
+- Online breeding stock catalog
+- Service booking system
+- Educational content sales
+- Regional networking capabilities
 
-**Integration Considerations**:
-- [ ] **Lead Capture**: Design forms and contact points for CRM integration
-- [ ] **Customer Data Flow**: Plan how website interactions feed into CRM
-- [ ] **Product Integration**: Plan how informational content connects to future e-commerce
-- [ ] **Timeline**: Establish when e-commerce features will be needed
+**Sector Development**: Comprehensive list of e-commerce sectors to be developed based on initial site performance and user feedback
 
-### Technical Considerations
-- [ ] **Hosting Requirements**: Determine hosting needs and budget
-- [ ] **Performance Goals**: Define expected traffic and performance targets
-- [ ] **Content Management**: Establish who will manage content and their technical level
-- [ ] **Budget Constraints**: Identify limitations on premium plugins/themes/hosting
+### CRM Integration (High Priority)
+**Decision Required**: Salesforce vs. Raisers Edge (Salesforce likely choice)
 
-### Architecture Decision: NextJS Integration & Multisite Evaluation
-**Critical Decision Required**: Evaluate integration of existing NextJS front-end website
+**Goal**: Consolidate multiple databases/spreadsheets under unified CRM system
 
-**Important Context**: This is NOT an enhancement to the existing NextJS site - different audiences, goals, and slightly different design (though informed by existing site).
+**Integration Requirements**:
+- Lead capture from all website forms
+- Automated data flow from website interactions to CRM
+- Customer data synchronization
+- Future e-commerce integration with CRM system
 
-**Options to Consider**:
+## Architecture Decision Framework
 
-1. **Traditional WordPress CMS (Recommended for E-commerce/CRM)**
-   - **Pros**: Native WooCommerce integration, extensive Salesforce plugins, easier CRM integration
-   - **Pros**: Simpler e-commerce setup, proven ecosystem for complex integrations
-   - **Pros**: Non-technical content management, plugin ecosystem for forms/submissions
-   - **Cons**: Less performance optimization than headless approach
-   - **Best for**: Sites prioritizing e-commerce functionality and CRM integration
+### CRITICAL DECISION: NextJS Integration Strategy
 
-2. **WordPress Multisite Network**
-   - **Pros**: Shared CRM integration across sites, centralized user management
-   - **Pros**: Consistent design system, shared plugin/theme management
-   - **Cons**: Complexity increases with e-commerce on multisite
-   - **Risk**: WooCommerce multisite can be challenging, Salesforce integration complexity
+**Context**: Recently completed NextJS front-end website exists. This new site serves different audiences with different goals - NOT an enhancement to existing NextJS site.
 
-3. **Headless WordPress + NextJS**
-   - **Pros**: Performance benefits, modern development workflow
-   - **Cons**: Custom e-commerce integration required, more complex Salesforce connectivity
-   - **Cons**: Higher development overhead for forms, CRM integration
-   - **Challenge**: WooCommerce headless implementations are complex
+### Option 1: Separate WordPress Installation (RECOMMENDED)
+**Development Time**: 125-175 hours
+**Approach**: Completely independent WordPress site
 
-4. **Separate WordPress Installation (Emerging Recommendation)**
-   - **Pros**: Full WooCommerce/Salesforce plugin ecosystem available
-   - **Pros**: Independent scaling and customization per site
-   - **Pros**: Easier to implement submission forms and CRM integrations
-   - **Cons**: Duplicate efforts for shared functionality
+**Pros**:
+- Fastest development timeline
+- Full access to WordPress/WooCommerce/Salesforce plugin ecosystem
+- Independent scaling and customization
+- No dependency on existing NextJS site
+- Easier implementation of forms and CRM integrations
+- Lower risk, proven approach
 
-**E-commerce & CRM Impact on Decision**:
-- **Salesforce Integration**: WordPress has mature plugins (WP Salesforce, Gravity Forms + Salesforce)
-- **WooCommerce**: Proven ecosystem with extensive Salesforce connectors
-- **Form Submissions**: WordPress form plugins integrate seamlessly with CRMs
-- **User Management**: Traditional WordPress better for complex user roles/permissions needed for e-commerce
+**Cons**:
+- Potential duplicate efforts for shared functionality
+- Separate maintenance overhead
 
-**Development Time Estimates**:
+### Option 2: Traditional WordPress CMS (with Integration Planning)
+**Development Time**: 150-200 hours
+**Approach**: WordPress site with architecture planning for eventual NextJS coordination
 
-1. **Traditional WordPress CMS (with future NextJS integration planning)** 
-   - **Estimated Hours**: 150-200 hours
-   - **Includes**: Custom theme, ACF setup, forms, CRM integration prep, WooCommerce foundation, architecture planning for eventual coordination with existing NextJS site
-   - **Risk Level**: Low - proven approach
+**Pros**:
+- Keeps door open for future integration
+- Native WooCommerce integration
+- Proven ecosystem for complex integrations
+- Planning for coordinated design systems
 
-2. **WordPress Multisite Network**
-   - **Estimated Hours**: 225-300 hours  
-   - **Includes**: Multisite setup, shared theming, complex CRM integration across sites, coordination between WordPress and NextJS sites
-   - **Risk Level**: Medium - multisite adds complexity, especially with e-commerce
+**Cons**:
+- Additional 25-50 hours for integration planning
+- More complex decision-making process
+- Dependencies on existing NextJS architecture
 
-3. **Headless WordPress + NextJS**
-   - **Estimated Hours**: 250-350 hours
-   - **Includes**: Custom API development, headless CMS setup, custom e-commerce integration, full integration with existing NextJS codebase
-   - **Risk Level**: High - complex custom development
+### Option 3: WordPress Multisite Network
+**Development Time**: 225-300 hours
+**Not Recommended Due To**:
+- WooCommerce multisite complexity
+- Increased e-commerce integration challenges
+- Higher maintenance overhead
+- Medium-high risk level
 
-4. **Separate WordPress Installation (completely independent)**
-   - **Estimated Hours**: 125-175 hours
-   - **Includes**: Standalone WordPress site, full plugin ecosystem access, no integration planning or coordination with existing NextJS site
-   - **Risk Level**: Low - simplest approach, no dependency on existing NextJS site
+### Option 4: Headless WordPress + NextJS
+**Development Time**: 250-350 hours
+**Not Recommended Due To**:
+- Custom e-commerce integration required
+- Complex Salesforce connectivity
+- Higher development overhead
+- High risk with less experienced developer resources
 
-**Development Time Analysis**:
-- **Fastest Development**: Separate WordPress Installation (125-175 hours)
-- **Best Value/Risk Ratio**: Traditional WordPress CMS (150-200 hours) 
-- **Longest Development**: NextJS approach (250-350 hours) with higher complexity
-- **Most Complex**: Multisite (225-300 hours) but may provide long-term value if sites need tight integration
+### **RECOMMENDATION: Option 1 - Separate WordPress Installation**
 
-**Evaluation Criteria**:
-- [ ] **E-commerce Complexity**: How complex will the future e-commerce needs be?
-- [ ] **CRM Integration**: Priority level for seamless Salesforce connectivity
-- [ ] **Development Resources**: Team capacity for custom vs. plugin-based solutions
-- [ ] **Timeline**: Speed to market for initial launch vs. long-term architecture
-- [ ] **Maintenance**: Long-term support and update complexity
-- [ ] **Content Management**: Ease of use for non-technical content managers
-- [ ] **Development Time**: 125-350 hour range depending on approach chosen
+**Rationale**:
+- Fastest time to market (125-175 hours)
+- Lowest risk approach
+- Full ecosystem access for CRM/e-commerce
+- Independence allows for rapid iteration
+- Future integration can be evaluated after both sites are established
 
-## Recommended Technical Stack
+## Technical Stack
 
 ### Core WordPress Setup
 - **WordPress**: Latest version with regular updates
-- **Theme Strategy**: Custom child theme approach for maximum flexibility
+- **Hosting**: Pantheon with Dev/Test/Live workflow
+- **Development Environment**: Lando for local development
 - **Content Management**: Advanced Custom Fields Pro for custom post types and field groups
-- **Development Environment**: Local development with staging/production workflow
+- **SEO**: RankMath SEO optimization
+- **Performance**: Cloudflare CDN integration
 
-### Suggested Parent Theme Options
-1. **Twenty Twenty-Four (Block Theme)** - Modern, lightweight, future-proof
-2. **GeneratePress** - Performance-focused, highly customizable, developer-friendly
-3. **Astra** - Fast, flexible, good WooCommerce compatibility
-4. **Custom Starter Theme** - Built from scratch using modern WordPress standards
+### Theme Strategy
+**Recommended**: GeneratePress parent theme with custom child theme
+- Performance-focused and highly customizable
+- Excellent WooCommerce compatibility for future e-commerce
+- Developer-friendly with strong community support
+- Proven track record for custom implementations
 
-### Essential Plugins (Recommended)
-- **Advanced Custom Fields Pro** - Custom fields and post types
-- **Custom Post Type UI** - Additional CPT management (if needed beyond ACF)
-- **RankMath SEO** - Search engine optimization
+### Form & CRM Integration
+- **Forms**: Gravity Forms Pro (excellent Salesforce integration)
+- **CRM Integration**: Gravity Forms Salesforce Add-on or dedicated Salesforce plugin
+- **Lead Management**: Automated data flow to chosen CRM system
 
-## Development Approach
+## Development Phases
 
-### Phase 1: Foundation Setup
+### Phase 1: Foundation (4-6 weeks)
 1. **Environment Setup**
-   - Create Pantheon sandbox site with default WordPress install
-   - Use Lando to pull codebase and database locally for development
-   - Standard Pantheon Dev/Test/Live workflow
+   - Pantheon site creation and Lando local setup
+   - GeneratePress child theme implementation
+   - Basic site architecture and navigation
 
-2. **Theme Architecture**
-   - Parent theme selection and evaluation
-   - Child theme creation
-   - Basic theme structure setup
-   - CSS/SCSS architecture planning
+2. **Content Structure**
+   - ACF field groups for all content types
+   - Custom post type creation
+   - Taxonomy structure implementation
 
-3. **Content Structure Planning**
-   - Custom post type identification
-   - Field group design
-   - Taxonomy structure
-   - Template hierarchy planning
+3. **Core Functionality**
+   - Basic submission forms
+   - Content templates for all post types
 
-### Phase 2: Content Types & Fields
-1. **Custom Post Types** (Based on content areas identified)
-   - **Livestock Profiles** - Sheep and goat breeding information, genetics data
-   - **Green Program** - Sustainable practices and environmental initiatives  
-   - **Grazing Practices** - Land management techniques and case studies
-   - **Educational Resources** - Guides for land managers on invasive species/mowing alternatives
-   - **Regional Showcases** - Northeast region expertise and success stories
-   - **Breeding Stock** - Available animals with genetics/parasite resistance data
-   - **Service Inquiries** - Pet goat requests and land management consultations
+### Phase 2: Content & Design (3-4 weeks)
+1. **Design Implementation**
+   - Visual design aligned with main LS site
+   - Responsive design across all devices
+   - Agricultural aesthetic with natural color palette
 
-2. **Custom Fields & Taxonomies**
-   - Field groups for each post type
-   - Category/tag taxonomies
-   - Custom taxonomies (regions, crops, practices, difficulty levels)
-
-3. **Template Development**
-   - Archive templates
-   - Single post templates
+2. **Advanced Features**
    - Search and filtering functionality
-   - Responsive design implementation
-
-### Phase 3: Advanced Features
-1. **User Experience**
-   - Advanced search/filtering
    - Content recommendations
-   - User accounts (if needed)
-   - Newsletter integration
+   - Performance optimization
 
-2. **Performance & SEO**
-   - Image optimization
-   - Cloudflare CDN and performance optimization
-   - Schema markup
-   - Performance monitoring
+### Phase 3: Integration & Testing (2-3 weeks)
+1. **CRM Integration**
+   - Salesforce connection setup
+   - Form automation testing
+   - Data flow verification
 
-### Phase 4: WooCommerce Preparation
-1. **Architecture Review**
-   - Ensure theme WooCommerce compatibility
-   - Plan product integration with content
-   - Design checkout/account flows
+2. **Launch Preparation**
+   - Performance testing
+   - SEO optimization
+   - Content migration and testing
 
-2. **Content Integration**
-   - Connect informational content to products
-   - Cross-selling strategies
-   - Member/customer content areas
+### Phase 4: Future Enhancement Planning
+1. **E-commerce Preparation**
+   - WooCommerce architecture planning
+   - Product integration strategy
+   - Payment system evaluation
 
-## Next Steps
+2. **Performance Monitoring**
+   - Analytics implementation
+   - User behavior tracking
+   - Conversion optimization
 
-### Immediate Actions Needed
-1. **Requirements Gathering Session**
-   - Define content types and structure
-   - Identify target audience specifics
-   - Establish timeline and budget parameters
+## Design Direction
 
-2. **Technical Decisions**
-   - Select parent theme approach
-   - Choose hosting solution
-   - Set up development environment
+### Reference Aesthetics
+**Target Style**: Clean, sophisticated agricultural aesthetic
+- **Blackberry Farm Shop**: Elegant rustic design, muted natural colors, high-quality photography
+- **Hudson Valley Foie Gras**: Minimalist e-commerce layout, premium positioning
+- **Esri StoryMaps**: Interactive educational content delivery
 
-3. **Content Planning**
-   - Create content inventory
-   - Design field group structures
-   - Plan template layouts
-
-### Design Inspiration & Style Preferences
-
-**Reference Websites Analyzed:**
-
-1. **Blackberry Farm Shop** (blackberryfarmshop.com/farmstead/)
-   - Elegant, rustic aesthetic reflecting agricultural heritage
-   - Muted, natural color palette (beiges, grays)
-   - High-quality product photography
-   - Sophisticated typography mixing serif and sans-serif
-   - Clean grid-based layout with intuitive navigation
-   - Storytelling through product descriptions emphasizing farm origins
-
-2. **Hudson Valley Foie Gras** (hudsonvalleyfoiegras.com/collections/duck)
-   - Clean, minimalist e-commerce layout
-   - Forest green and neutral color palette suggesting premium quality
-   - Product-focused design with consistent image sizing
-   - Descriptive content emphasizing artisanal quality
-   - Mobile-friendly, responsive design
-
-3. **Esri StoryMaps** (Environmental/Conservation Sites)
-   - Interactive storytelling through visual narratives
-   - Educational content delivery with engaging user experience
-   - Clean, minimal design focusing on content
-   - Visual storytelling to make complex information accessible
-
-**Design Direction Insights:**
-- Preference for clean, sophisticated agricultural aesthetics
-- Natural color palettes that reflect farming/environmental themes
+### Design Principles
+- Natural color palettes reflecting farming/environmental themes
 - High-quality photography and visual storytelling
 - Premium positioning while maintaining authenticity
-- Interactive, educational content delivery
 - Mobile-responsive, user-friendly layouts
+- Interactive educational content delivery
 
-### Questions for Next Discussion
-1. What specific farming practices/topics will be covered?
-2. What's the rough timeline for launch and WooCommerce addition?
-3. Do you have preferred hosting providers or budget constraints?
-4. Will there be multiple content contributors?
-5. Any existing branding/design requirements?
+## Immediate Action Items
+
+### 1. FINALIZE ARCHITECTURE DECISION
+**Owner**: Technical Lead
+**Timeline**: This week
+- [ ] Confirm Separate WordPress Installation approach
+- [ ] Document decision rationale
+- [ ] Plan development environment setup
+
+### 2. CRM INTEGRATION PLANNING
+**Owner**: Business Lead + Technical Lead
+**Timeline**: Next week
+- [ ] Finalize Salesforce vs. Raisers Edge decision
+- [ ] Define lead capture requirements
+- [ ] Map data flow from website to CRM
+
+### 3. DEVELOPMENT SETUP
+**Owner**: Technical Lead
+**Timeline**: Week 2
+- [ ] Set up Pantheon hosting environment
+- [ ] Configure Lando local development
+- [ ] Install and configure GeneratePress + child theme
+
+### 4. CONTENT STRUCTURE FINALIZATION
+**Owner**: Content Lead + Technical Lead
+**Timeline**: Week 2-3
+- [ ] Finalize ACF field groups for livestock data
+- [ ] Complete taxonomy structure for animal types, regions, practices
+- [ ] Create content templates and style guide
 
 ## Success Metrics
-- [ ] Fast, responsive site performance
-- [ ] Easy content management for non-technical users
-- [ ] Scalable architecture for future WooCommerce integration
-- [ ] SEO-optimized content structure
-- [ ] Mobile-first responsive design
+
+- **Performance**: Fast, responsive site (< 3 second load times)
+- **Usability**: Easy content management for non-technical users
+- **Scalability**: Architecture supports future WooCommerce integration
+- **SEO**: Optimized content structure for search visibility
+- **Mobile**: Mobile-first responsive design
+- **Integration**: Seamless CRM data flow and lead capture
+
+## Project Timeline
+
+**Total Estimated Development**: 125-175 hours (3-4 months part-time)
+
+**Phase 1 Completion**: 6-8 weeks
+**Beta Launch**: 10-12 weeks
+**Full Launch**: 12-16 weeks
 
 ---
 
-**Next Meeting**: Review requirements and begin technical setup phase.
+**Next Meeting**: Architecture decision confirmation and development kickoff planning
 
-**Project Status**: Planning Phase - Requirements Gathering
+**Project Status**: Planning Complete - Ready for Development Phase
