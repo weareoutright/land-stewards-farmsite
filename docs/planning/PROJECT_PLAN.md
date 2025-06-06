@@ -142,11 +142,19 @@
 - **Performance**: Cloudflare CDN integration
 
 ### Theme Strategy
-**Recommended**: GeneratePress parent theme with custom child theme
+**Options**:
+
+**GeneratePress + Custom Child Theme**
 - Performance-focused and highly customizable
 - Excellent WooCommerce compatibility for future e-commerce
 - Developer-friendly with strong community support
 - Proven track record for custom implementations
+
+**Custom Theme Development**
+- Complete design control and unique branding
+- Optimized specifically for project requirements
+- No third-party dependencies or licensing
+- Full ownership of codebase
 
 ### Form & CRM Integration
 - **Forms**: Gravity Forms Pro (excellent Salesforce integration)
