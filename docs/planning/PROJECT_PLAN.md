@@ -8,7 +8,7 @@
 
 **Technical Approach**: Custom theme development using Advanced Custom Fields (ACF) for content management, avoiding page builder plugins.
 
-**MAJOR ARCHITECTURE CONSIDERATION**: Recently completed NextJS front-end only website may be included in this build. WordPress Multisite architecture should be evaluated for managing multiple sites under one installation.
+**MAJOR ARCHITECTURE CONSIDERATION**: Recently completed NextJS front-end only website may be included in this build. WordPress Multisite architecture should be evaluated for managing multiple sites under one installation. 
 
 ## Initial Requirements Gathering
 
@@ -113,33 +113,33 @@
 - **Form Submissions**: WordPress form plugins integrate seamlessly with CRMs
 - **User Management**: Traditional WordPress better for complex user roles/permissions needed for e-commerce
 
-**Budget Estimates @ $200/hour**:
+**Development Time Estimates**:
 
 1. **Traditional WordPress CMS** 
-   - **Estimated Budget**: $30,000-$40,000 (150-200 hours)
+   - **Estimated Hours**: 150-200 hours
    - **Includes**: Custom theme, ACF setup, forms, CRM integration prep, WooCommerce foundation
    - **Risk Level**: Low - proven approach with experienced team
 
 2. **WordPress Multisite Network**
-   - **Estimated Budget**: $45,000-$60,000 (225-300 hours)  
+   - **Estimated Hours**: 225-300 hours  
    - **Includes**: Multisite setup, shared theming, complex CRM integration across sites
    - **Risk Level**: Medium - multisite adds complexity, especially with e-commerce
 
 3. **Headless WordPress + NextJS**
-   - **Estimated Budget**: $50,000-$70,000 (250-350 hours)
+   - **Estimated Hours**: 250-350 hours
    - **Includes**: Custom API development, headless CMS setup, custom e-commerce integration
    - **Risk Level**: High - complex custom development with less experienced developer
 
 4. **Separate WordPress Installation**
-   - **Estimated Budget**: $25,000-$35,000 (125-175 hours)
+   - **Estimated Hours**: 125-175 hours
    - **Includes**: Independent WordPress site, full plugin ecosystem access
    - **Risk Level**: Low - simplest approach with experienced team
 
-**Budget Impact Analysis**:
-- **Most Cost-Effective**: Separate WordPress Installation ($25K-$35K)
-- **Best Value/Risk Ratio**: Traditional WordPress CMS ($30K-$40K) 
-- **Highest Risk/Cost**: NextJS approach ($50K-$70K) with inexperienced solo developer
-- **Most Complex**: Multisite ($45K-$60K) but may provide long-term value if sites need tight integration
+**Development Time Analysis**:
+- **Fastest Development**: Separate WordPress Installation (125-175 hours)
+- **Best Value/Risk Ratio**: Traditional WordPress CMS (150-200 hours) 
+- **Longest Development**: NextJS approach (250-350 hours) with higher complexity
+- **Most Complex**: Multisite (225-300 hours) but may provide long-term value if sites need tight integration
 
 **Evaluation Criteria**:
 - [ ] **E-commerce Complexity**: How complex will the future e-commerce needs be?
@@ -148,7 +148,7 @@
 - [ ] **Timeline**: Speed to market for initial launch vs. long-term architecture
 - [ ] **Maintenance**: Long-term support and update complexity
 - [ ] **Content Management**: Ease of use for non-technical content managers
-- [ ] **Budget Constraints**: $25K-$70K range depending on approach chosen
+- [ ] **Development Time**: 125-350 hour range depending on approach chosen
 
 ## Recommended Technical Stack
 
