@@ -1,5 +1,20 @@
 # Land Steward Farming Site - Project Plan
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Target Audiences & User Goals](#target-audiences--user-goals)
+- [Content Strategy](#content-strategy)
+- [Future Integration Planning](#future-integration-planning)
+- [Architecture Decision Framework](#architecture-decision-framework)
+- [Technical Stack](#technical-stack)
+- [Development Phases](#development-phases)
+- [Design Direction](#design-direction)
+- [Immediate Action Items](#immediate-action-items)
+- [Success Metrics](#success-metrics)
+- [Project Timeline](#project-timeline)
+- [Client Clarification Questions](#client-clarification-questions)
+
 ## Project Overview
 
 **Goal**: Create a WordPress website focused on marketing livestock breeding practices with future expansion to crop content and e-commerce capabilities.
