@@ -58,7 +58,7 @@
 
 **Sector Development**: Comprehensive list of e-commerce sectors to be developed based on initial site performance and user feedback
 
-### CRM Integration (High Priority)
+### CRM Integration (Phase 2+)
 **Decision Required**: Salesforce vs. Raisers Edge (Salesforce likely choice)
 
 **Goal**: Consolidate multiple databases/spreadsheets under unified CRM system
