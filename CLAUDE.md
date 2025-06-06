@@ -6,7 +6,6 @@
 - Follow existing project commit style
 
 ## Development Environment
-- Using Lando for local development
 - Pantheon hosting with Dev/Test/Live workflow
 - WordPress site for land steward farming best practices
 
