@@ -151,7 +151,7 @@
 ### Core WordPress Setup
 - **WordPress**: Latest version with regular updates
 - **Hosting**: Pantheon with Dev/Test/Live workflow
-- **Development Environment**: Lando for local development
+- **Development Environment**: Local development setup
 - **Content Management**: Advanced Custom Fields Pro for custom post types and field groups
 - **SEO**: RankMath SEO optimization
 - **Performance**: Cloudflare CDN integration
@@ -180,7 +180,7 @@
 
 ### Phase 1: Foundation (4-6 weeks)
 1. **Environment Setup**
-   - Pantheon site creation and Lando local setup
+   - Pantheon site creation and local development setup
    - GeneratePress child theme implementation
    - Basic site architecture and navigation
 
@@ -277,7 +277,7 @@
 **Owner**: Technical Lead
 **Timeline**: Week 2
 - [ ] Set up Pantheon hosting environment
-- [ ] Configure Lando local development
+- [ ] Configure local development environment
 - [ ] Install and configure GeneratePress + child theme
 
 ### 4. CONTENT STRUCTURE FINALIZATION
