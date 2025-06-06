@@ -118,7 +118,7 @@
 1. **Traditional WordPress CMS (with future NextJS integration planning)** 
    - **Estimated Hours**: 150-200 hours
    - **Includes**: Custom theme, ACF setup, forms, CRM integration prep, WooCommerce foundation, architecture planning for eventual coordination with existing NextJS site
-   - **Risk Level**: Low - proven approach with experienced team
+   - **Risk Level**: Low - proven approach
 
 2. **WordPress Multisite Network**
    - **Estimated Hours**: 225-300 hours  
