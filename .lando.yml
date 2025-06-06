@@ -1,6 +1,0 @@
-name: ls-farm-site
-recipe: pantheon
-config:
-  framework: wordpress
-  site: ls-farm-site
-  id: b077f231-a371-479d-bbeb-0ce598a02095
