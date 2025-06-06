@@ -10,8 +10,6 @@
 
 **MAJOR ARCHITECTURE CONSIDERATION**: Recently completed NextJS front-end only website may be included in this build. WordPress Multisite architecture should be evaluated for managing multiple sites under one installation.
 
-**Team**: Front-end developer with strong CSS/HTML skills, seeking technical leadership for initial setup and architecture.
-
 ## Initial Requirements Gathering
 
 ### Target Audience & Goals
