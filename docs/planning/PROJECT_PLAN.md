@@ -207,9 +207,9 @@
 
 ### Reference Aesthetics
 **Target Style**: Clean, sophisticated agricultural aesthetic
-- **Blackberry Farm Shop**: Elegant rustic design, muted natural colors, high-quality photography
-- **Hudson Valley Foie Gras**: Minimalist e-commerce layout, premium positioning
-- **Esri StoryMaps**: Interactive educational content delivery
+- **[Blackberry Farm Shop](https://shop.blackberryfarm.com)**: Elegant rustic design, muted natural colors, high-quality photography
+- **[Hudson Valley Foie Gras](https://www.hudsonvalleyfoiegras.com)**: Minimalist e-commerce layout, premium positioning
+- **[Esri StoryMaps](https://storymaps.arcgis.com)**: Interactive educational content delivery
 
 ### Design Principles
 - Natural color palettes reflecting farming/environmental themes
