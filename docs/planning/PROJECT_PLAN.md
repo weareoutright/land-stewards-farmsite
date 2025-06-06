@@ -233,13 +233,24 @@
 
 ## Design Direction
 
-### Reference Aesthetics
-**Target Style**: Clean, sophisticated agricultural aesthetic
-- **[Blackberry Farm Shop](https://shop.blackberryfarm.com)**: Elegant rustic design, muted natural colors, high-quality photography
-- **[Hudson Valley Foie Gras](https://www.hudsonvalleyfoiegras.com)**: Minimalist e-commerce layout, premium positioning
-- **[Esri StoryMaps](https://storymaps.arcgis.com)**: Interactive educational content delivery
+### Primary Design Reference
+**[Land Stewards Site](https://land-stewards-site.vercel.app/)** - Primary design direction and branding source
+- Teal/aqua accent color (#2dc2bd) 
+- Clean, modern sans-serif typography
+- Card-based layout patterns with alternating image and text sections
+- Minimalist color palette with neutral backgrounds
+- Professional yet approachable ecological aesthetic
+- "Land-as-laboratory" scientific approach to content presentation
+
+### Functional & Content References
+**Approach Inspiration**: How similar businesses present content and functionality
+- **[Blackberry Farm Shop](https://shop.blackberryfarm.com)**: Premium agricultural positioning and high-quality content presentation
+- **[Hudson Valley Foie Gras](https://www.hudsonvalleyfoiegras.com)**: Agricultural e-commerce functionality and product catalog approach
+- **[Esri StoryMaps](https://storymaps.arcgis.com)**: Interactive educational content delivery methods
 
 ### Design Principles
+- **Complementary branding** to main Land Stewards site with consistent visual identity
+- Teal accent color and card-based layouts matching primary site
 - Natural color palettes reflecting farming/environmental themes
 - High-quality photography and visual storytelling
 - Premium positioning while maintaining authenticity
