@@ -278,6 +278,33 @@
 **Beta Launch**: 10-12 weeks
 **Full Launch**: 12-16 weeks
 
+## Client Clarification Questions
+
+### Technical Architecture & Integration
+1. **CRM Decision**: Have you decided between Salesforce vs. Raisers Edge? This affects integration complexity and timeline.
+2. **Existing Data**: What databases/spreadsheets need to be migrated? Can you provide a sample of the data structure?
+3. **Form Requirements**: What specific fields are needed for each inquiry type (pet owners, land managers, breeders)?
+
+### Content & Functionality Specifics
+4. **Genetics Data**: What format is your breeding/genetics data in? How complex is the parasite resistance tracking?
+5. **Content Volume**: How many livestock profiles, case studies, and educational resources will you launch with?
+6. **Search Complexity**: What specific filters are most important (by genetics, region, animal type, etc.)?
+
+### Business Requirements
+7. **Geographic Scope**: Is "Northeast region" specific states or broader? Any international considerations?
+8. **Lead Volume**: How many inquiries do you typically handle monthly for capacity planning?
+9. **Admin Users**: How many people need content editing access? What's their technical comfort level?
+
+### Design & User Experience
+10. **Photography**: Do you have high-quality livestock/farm photos, or is photography needed in the budget?
+    - **ANSWER**: Yes, lots of good photography and can create more ✓
+11. **Branding**: Can you share the main Land Stewards site for styling reference?
+    - **ANSWER**: https://land-stewards-site.vercel.app/ ✓
+
+### Timeline & Launch
+12. **Critical Launch Date**: Any seasonal considerations (breeding seasons, trade shows, etc.)?
+13. **Phase 2 Priority**: How soon after launch do you want e-commerce capabilities?
+
 ---
 
 **Next Meeting**: Architecture decision confirmation and development kickoff planning
