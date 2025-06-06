@@ -115,25 +115,25 @@
 
 **Development Time Estimates**:
 
-1. **Traditional WordPress CMS** 
+1. **Traditional WordPress CMS (with future NextJS integration planning)** 
    - **Estimated Hours**: 150-200 hours
-   - **Includes**: Custom theme, ACF setup, forms, CRM integration prep, WooCommerce foundation
+   - **Includes**: Custom theme, ACF setup, forms, CRM integration prep, WooCommerce foundation, architecture planning for eventual coordination with existing NextJS site
    - **Risk Level**: Low - proven approach with experienced team
 
 2. **WordPress Multisite Network**
    - **Estimated Hours**: 225-300 hours  
-   - **Includes**: Multisite setup, shared theming, complex CRM integration across sites
+   - **Includes**: Multisite setup, shared theming, complex CRM integration across sites, coordination between WordPress and NextJS sites
    - **Risk Level**: Medium - multisite adds complexity, especially with e-commerce
 
 3. **Headless WordPress + NextJS**
    - **Estimated Hours**: 250-350 hours
-   - **Includes**: Custom API development, headless CMS setup, custom e-commerce integration
-   - **Risk Level**: High - complex custom development with less experienced developer
+   - **Includes**: Custom API development, headless CMS setup, custom e-commerce integration, full integration with existing NextJS codebase
+   - **Risk Level**: High - complex custom development
 
-4. **Separate WordPress Installation**
+4. **Separate WordPress Installation (completely independent)**
    - **Estimated Hours**: 125-175 hours
-   - **Includes**: Independent WordPress site, full plugin ecosystem access
-   - **Risk Level**: Low - simplest approach with experienced team
+   - **Includes**: Standalone WordPress site, full plugin ecosystem access, no integration planning or coordination with existing NextJS site
+   - **Risk Level**: Low - simplest approach, no dependency on existing NextJS site
 
 **Development Time Analysis**:
 - **Fastest Development**: Separate WordPress Installation (125-175 hours)
