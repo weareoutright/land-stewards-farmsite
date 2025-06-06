@@ -120,7 +120,7 @@
 - Custom e-commerce integration required
 - Complex Salesforce connectivity
 - Higher development overhead
-- High risk with less experienced developer resources
+- High risk with smaller team and competing priorities
 
 ### **RECOMMENDATION: Option 1 - Separate WordPress Installation**
 
