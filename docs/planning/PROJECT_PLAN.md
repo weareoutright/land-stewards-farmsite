@@ -80,31 +80,77 @@
 ### Architecture Decision: NextJS Integration & Multisite Evaluation
 **Critical Decision Required**: Evaluate integration of existing NextJS front-end website
 
+**Important Context**: This is NOT an enhancement to the existing NextJS site - different audiences, goals, and slightly different design (though informed by existing site).
+
 **Options to Consider**:
-1. **WordPress Multisite Network**
-   - Manage multiple sites under one WordPress installation
-   - Shared user base, plugins, and themes across sites
-   - Centralized administration and updates
-   - Potential for shared CRM integration across sites
 
-2. **Headless WordPress + NextJS**
-   - Use WordPress as content management backend
-   - NextJS site consumes WordPress data via REST API/GraphQL
-   - Maintain existing NextJS frontend architecture
-   - More complex but potentially better performance
+1. **Traditional WordPress CMS (Recommended for E-commerce/CRM)**
+   - **Pros**: Native WooCommerce integration, extensive Salesforce plugins, easier CRM integration
+   - **Pros**: Simpler e-commerce setup, proven ecosystem for complex integrations
+   - **Pros**: Non-technical content management, plugin ecosystem for forms/submissions
+   - **Cons**: Less performance optimization than headless approach
+   - **Best for**: Sites prioritizing e-commerce functionality and CRM integration
 
-3. **Separate WordPress Installation**
-   - Keep sites completely independent
-   - Simpler initial setup but harder to maintain consistency
-   - Duplicate efforts for CRM integration and user management
+2. **WordPress Multisite Network**
+   - **Pros**: Shared CRM integration across sites, centralized user management
+   - **Pros**: Consistent design system, shared plugin/theme management
+   - **Cons**: Complexity increases with e-commerce on multisite
+   - **Risk**: WooCommerce multisite can be challenging, Salesforce integration complexity
+
+3. **Headless WordPress + NextJS**
+   - **Pros**: Performance benefits, modern development workflow
+   - **Cons**: Custom e-commerce integration required, more complex Salesforce connectivity
+   - **Cons**: Higher development overhead for forms, CRM integration
+   - **Challenge**: WooCommerce headless implementations are complex
+
+4. **Separate WordPress Installation (Emerging Recommendation)**
+   - **Pros**: Full WooCommerce/Salesforce plugin ecosystem available
+   - **Pros**: Independent scaling and customization per site
+   - **Pros**: Easier to implement submission forms and CRM integrations
+   - **Cons**: Duplicate efforts for shared functionality
+
+**E-commerce & CRM Impact on Decision**:
+- **Salesforce Integration**: WordPress has mature plugins (WP Salesforce, Gravity Forms + Salesforce)
+- **WooCommerce**: Proven ecosystem with extensive Salesforce connectors
+- **Form Submissions**: WordPress form plugins integrate seamlessly with CRMs
+- **User Management**: Traditional WordPress better for complex user roles/permissions needed for e-commerce
+
+**Budget Estimates @ $200/hour**:
+
+1. **Traditional WordPress CMS** 
+   - **Estimated Budget**: $30,000-$40,000 (150-200 hours)
+   - **Includes**: Custom theme, ACF setup, forms, CRM integration prep, WooCommerce foundation
+   - **Risk Level**: Low - proven approach with experienced team
+
+2. **WordPress Multisite Network**
+   - **Estimated Budget**: $45,000-$60,000 (225-300 hours)  
+   - **Includes**: Multisite setup, shared theming, complex CRM integration across sites
+   - **Risk Level**: Medium - multisite adds complexity, especially with e-commerce
+
+3. **Headless WordPress + NextJS**
+   - **Estimated Budget**: $50,000-$70,000 (250-350 hours)
+   - **Includes**: Custom API development, headless CMS setup, custom e-commerce integration
+   - **Risk Level**: High - complex custom development with less experienced developer
+
+4. **Separate WordPress Installation**
+   - **Estimated Budget**: $25,000-$35,000 (125-175 hours)
+   - **Includes**: Independent WordPress site, full plugin ecosystem access
+   - **Risk Level**: Low - simplest approach with experienced team
+
+**Budget Impact Analysis**:
+- **Most Cost-Effective**: Separate WordPress Installation ($25K-$35K)
+- **Best Value/Risk Ratio**: Traditional WordPress CMS ($30K-$40K) 
+- **Highest Risk/Cost**: NextJS approach ($50K-$70K) with inexperienced solo developer
+- **Most Complex**: Multisite ($45K-$60K) but may provide long-term value if sites need tight integration
 
 **Evaluation Criteria**:
-- [ ] **Content Management**: How will content be managed across sites?
-- [ ] **User Experience**: Do sites need shared user accounts/login?
-- [ ] **CRM Integration**: Single CRM integration vs. multiple integrations
-- [ ] **Maintenance**: Administrative overhead and update complexity
-- [ ] **Performance**: Speed and scaling considerations
-- [ ] **Development Resources**: Team capacity for different approaches
+- [ ] **E-commerce Complexity**: How complex will the future e-commerce needs be?
+- [ ] **CRM Integration**: Priority level for seamless Salesforce connectivity
+- [ ] **Development Resources**: Team capacity for custom vs. plugin-based solutions
+- [ ] **Timeline**: Speed to market for initial launch vs. long-term architecture
+- [ ] **Maintenance**: Long-term support and update complexity
+- [ ] **Content Management**: Ease of use for non-technical content managers
+- [ ] **Budget Constraints**: $25K-$70K range depending on approach chosen
 
 ## Recommended Technical Stack
 
