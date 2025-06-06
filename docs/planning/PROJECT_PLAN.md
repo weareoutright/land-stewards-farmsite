@@ -91,7 +91,7 @@
 **Context**: Recently completed NextJS front-end website exists. This new site serves different audiences with different goals - NOT an enhancement to existing NextJS site.
 
 ### Option 1: Separate WordPress Installation (RECOMMENDED)
-**Development Time**: 125-175 hours
+**Development Time**: 140-180 hours, 3-4 months
 **Approach**: Completely independent WordPress site
 
 **Pros**:
