@@ -244,9 +244,10 @@
 
 ### Functional & Content References
 **Approach Inspiration**: How similar businesses present content and functionality
-- **[Blackberry Farm Shop](https://shop.blackberryfarm.com)**: Premium agricultural positioning and high-quality content presentation
-- **[Hudson Valley Foie Gras](https://www.hudsonvalleyfoiegras.com)**: Agricultural e-commerce functionality and product catalog approach
-- **[Esri StoryMaps](https://storymaps.arcgis.com)**: Interactive educational content delivery methods
+- **[Blackberry Farm Shop](https://www.blackberryfarmshop.com/farmstead/)**: Artisanal farm product storytelling, seasonal collections, and premium agricultural lifestyle branding
+- **[Hudson Valley Foie Gras](https://hudsonvalleyfoiegras.com/collections/duck)**: Product catalog organization, culinary education approach, and agricultural product versatility presentation
+- **[Esri StoryMaps - Piping Plover](https://storymaps.esri.com/archives/stories/2012/pipingplover/)**: Conservation storytelling through interactive mapping and species data visualization
+- **[Audubon Alaska StoryMap](https://ak.audubon.org/survival-degrees-storymap)**: Environmental data storytelling and scientific content presentation methods
 
 ### Design Principles
 - **Complementary branding** to main Land Stewards site with consistent visual identity
