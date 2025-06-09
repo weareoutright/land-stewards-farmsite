@@ -56,8 +56,8 @@
 - **Search & Filtering** - Advanced filtering by genetics, region, practice type, animal type
 
 ### Content Organization
-- **Custom Post Types**: Livestock Profiles, Green Program Posts, Grazing Case Studies, Educational Resources, Regional Showcases, Breeding Stock Listings, Service Inquiries
-- **Taxonomies**: Animal type, practice type, region, difficulty level, genetics data
+- **Custom Post Types TBD**: Possibilities include Livestock Profiles, Green Program Posts, Grazing Case Studies, Educational Resources, Regional Showcases, Breeding Stock Listings, Service Inquiries
+- **Taxonomies TBD**: Could include thigs like animal type, practice type, region, difficulty level, genetics data
 - **Custom Fields**: Breeding information, genetics data, parasite resistance metrics, contact forms
 
 ## Future Integration Planning
